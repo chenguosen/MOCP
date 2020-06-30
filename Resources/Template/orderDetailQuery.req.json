@@ -1,0 +1,6 @@
+{
+    "msgType": "OrderDetailQueryReq", 
+    "orderNum": "QDDD20200620134058298282", 
+    "version": "1.0.0", 
+    "channelCode": "20002"
+}

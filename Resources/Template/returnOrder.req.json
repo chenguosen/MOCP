@@ -1,0 +1,24 @@
+{
+    "shopCode":"67044",
+    "extChannelReturnTime":"20200622164951",
+    "msgType":"returnOrderReq",
+    "orderId":"723895136292405248",
+    "returnGoodsInfo":[
+        {
+            "returnQuantity":1,
+            "goodsId":"9990400100002450002",
+            "price":100,
+            "goodsName":"权益超市1元点播产品"
+        }],
+    "version":"1.0.0",
+    "buyerReturnTime":"20200622164951",
+    "number":"15991618275",
+    "feedbackUrl":"https://testrmtapi.cmicrwx.cn/cmpp-api/external/rightProductOrderFdbk",
+    "subOrderId":"723895136292405248",
+    "totalFee":100,
+    "extReturnId":"724667483144769536",
+    "shopName ":"权益超市",
+    "contactPhone":"15991618275",
+    "returnType":"5",
+    "channelCode":"200002"
+}
