@@ -1,0 +1,8 @@
+{
+	"msgType": "SpecificOrderQueryReq",
+	"version": "1.0.0",
+	"serviceType": "01",
+	"serviceNumber": "13518141079",
+	"goodsType": "2",
+	"goodsIdList": "9990200200000410001;9990289000001600001"
+}

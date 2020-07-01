@@ -97,3 +97,8 @@ Resource          ../../KeyWords/Biz/任我看大网业务.robot
     删除请求节点    $.msgType    $.version    $.channelCode
     MOCP发送Reqx请求    /ifp/poorderAction/${req_flag}.service
     校验应答字段值    $.hRet=101
+
+可订购权益产品查询，成功5
+    读取可订购权益产品查询请求
+    MOCP发送Reqx请求    /ifp/poorderAction/${req_flag}.service
+    校验应答字段值    $.hRet=0    $.bizCode=1    $.bizDesc=描述

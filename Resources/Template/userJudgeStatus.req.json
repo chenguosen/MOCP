@@ -1,0 +1,7 @@
+{
+	"msgType": "UserJudgeStatusReq",
+	"version": "1.0.0",
+	"serviceType": "01",
+	"serviceNumber": "15105276395",
+	"areaCode":""
+}

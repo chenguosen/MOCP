@@ -6,7 +6,7 @@ Resource          ../../KeyWords/Biz/通用业务逻辑处理.robot
 可领取权益查询，成功
     读取可领取权益查询请求
     MOCP发送Reqx请求    /ifp/poorderAction/${req_flag}.service
-    校验应答字段值    $.hRet=0    $.bizCode=1    $.bizDesc=描述
+    校验应答字段值    $.hRet=0    $.bizCode=3    $.bizDesc=无可领取权益
 
 可领取权益查询，手机号格式错误，返回错误码7
     读取可领取权益查询请求

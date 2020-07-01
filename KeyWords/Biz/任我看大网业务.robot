@@ -36,3 +36,13 @@ Resource          通用业务逻辑处理.robot
     [Arguments]    @{kvs}
     Set Test Variable    ${req_flag}    ${MOCP_interface_names[9]}
     ${reqx}    读取包结构    ${req_flag}.req.json
+
+读取特定产品订购关系脱敏查询请求
+    [Arguments]    @{kvs}
+    Set Test Variable    ${req_flag}    ${MOCP_interface_names[10]}
+    ${reqx}    读取包结构    ${req_flag}.req.json
+
+读取用户在网状态脱敏查询请求
+    [Arguments]    @{kvs}
+    Set Test Variable    ${req_flag}    ${MOCP_interface_names[11]}
+    ${reqx}    读取包结构    ${req_flag}.req.json

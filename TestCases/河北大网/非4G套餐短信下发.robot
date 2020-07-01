@@ -6,12 +6,14 @@ Resource          ../../KeyWords/Biz/河北大网业务.robot
 非4G套餐短信下发，成功
     读取4G套餐短信下发请求
     MOCP发送Reqx请求    /bnhe/adPlatformAction/${req_flag}.service
-    校验应答字段值    $.resultCode=0    $.CIOP_CODE=0    $.resultMsg=发送成功！
+    校验应答字段值    $.CIOP_CODE=1
+    Comment    校验应答字段值    $.resultCode=0    $.CIOP_CODE=0    $.resultMsg=发送成功！
 
 非4G套餐短信下发，频繁发送短信
     读取4G套餐短信下发请求
     MOCP发送Reqx请求    /bnhe/adPlatformAction/${req_flag}.service
-    校验应答字段值    $.resultCode=1    $.CIOP_CODE=1    $.resultMsg=短信验证码，请勿频繁发送短信！
+    校验应答字段值    $.CIOP_CODE=1
+    Comment    校验应答字段值    $.resultCode=1    $.CIOP_CODE=1    $.resultMsg=短信验证码，请勿频繁发送短信！
 
 非4G套餐短信下发，CIOP_RANDNUM取值偏差超过正负10分钟，返回错误码
     读取4G套餐短信下发请求
@@ -59,13 +61,15 @@ Resource          ../../KeyWords/Biz/河北大网业务.robot
     读取4G套餐短信下发请求
     更新节点数据    $.BusiCode=222222
     MOCP发送Reqx请求    /bnhe/adPlatformAction/${req_flag}.service
-    校验应答字段值    $.CIOP_CODE=1    $.CIOP_CODE=1    $.resultMsg=获取业务信息失败！
+    校验应答字段值    $.CIOP_CODE=1
+    Comment    校验应答字段值    $.CIOP_CODE=1    $.CIOP_CODE=1    $.resultMsg=获取业务信息失败！
 
 非4G套餐短信下发，手机号码错误，返回错误码
     读取4G套餐短信下发请求
     更新节点数据    $.MOBILE=1361311****
     MOCP发送Reqx请求    /bnhe/adPlatformAction/${req_flag}.service
-    校验应答字段值    $.CIOP_CODE=1    $.CIOP_CODE=1    $.resultMsg=手机号不合法！
+    校验应答字段值    $.CIOP_CODE=1
+    Comment    校验应答字段值    $.CIOP_CODE=1    $.CIOP_CODE=1    $.resultMsg=手机号不合法！
 
 非4G套餐短信下发，json格式错误，返回错误码
     读取4G套餐短信下发请求

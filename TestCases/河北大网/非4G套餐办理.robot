@@ -6,13 +6,14 @@ Resource          ../../KeyWords/Biz/通用业务逻辑处理.robot
 非4G套餐办理，验证码错误，返回错误码
     读取非4G套餐办理请求
     MOCP发送Reqx请求    /bnhe/adPlatformAction/${req_flag}.service
-    校验应答字段值    $.resultCode=1    $.resultCode=1    $.resultMsg=验证码错误!
+    校验应答字段值    $.CIOP_CODE=1
 
 非4G套餐办理，手机号码格式错误，返回错误码
     读取非4G套餐办理请求
     更新节点数据    $.MOBILE=1361311****
     MOCP发送Reqx请求    /bnhe/adPlatformAction/${req_flag}.service
-    校验应答字段值    $.resultCode=1    $.resultCode=1    $.resultMsg=手机号不合法！
+    校验应答字段值    $.CIOP_CODE=1
+    Comment    校验应答字段值    $.resultCode=1    $.resultCode=1    $.resultMsg=手机号不合法！
 
 非4G套餐办理，CIOP_RANDNUM取值偏差超过正负10分钟，返回错误码
     读取非4G套餐办理请求
@@ -60,13 +61,15 @@ Resource          ../../KeyWords/Biz/通用业务逻辑处理.robot
     读取非4G套餐办理请求
     更新节点数据    $.BusiCode=222222
     MOCP发送Reqx请求    /bnhe/adPlatformAction/${req_flag}.service
-    校验应答字段值    $.CIOP_CODE=1    $.CIOP_CODE=1    $.resultMsg=验证码错误!
+    校验应答字段值    $.CIOP_CODE=1
+    Comment    校验应答字段值    $.CIOP_CODE=1    $.CIOP_CODE=1    $.resultMsg=验证码错误!
 
 非4G套餐办理，手机号码错误，返回错误码
     读取非4G套餐办理请求
     更新节点数据    $.MOBILE=1361311****
     MOCP发送Reqx请求    /bnhe/adPlatformAction/${req_flag}.service
-    校验应答字段值    $.CIOP_CODE=1    $.CIOP_CODE=1    $.resultMsg=手机号不合法！
+    校验应答字段值    $.CIOP_CODE=1
+    Comment    校验应答字段值    $.CIOP_CODE=1    $.CIOP_CODE=1    $.resultMsg=手机号不合法！
 
 非4G套餐办理，json格式错误，返回错误码
     读取非4G套餐办理请求
